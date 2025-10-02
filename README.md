@@ -5,4 +5,4 @@
 
 before using my config file, make sure you have fastfetch installed on your distros
  markdown
- [Project Explanation](https://github.com/fastfetch-cli/fastfetch) 
+ [fastfetch page](https://github.com/fastfetch-cli/fastfetch) 
