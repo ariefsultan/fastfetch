@@ -5,3 +5,7 @@
 
 before using my config file, make sure you have fastfetch installed on your distros
  [fastfetch page](https://github.com/fastfetch-cli/fastfetch) 
+
+To generate your fastfetch config file for the first time 
+                          fastfetch --gen-config
+This command will create a config.jsonc file in the default location, which is typically ~/.config/fastfetch/
