@@ -6,4 +6,4 @@
 before using my config file, make sure you have fastfetch installed on your distros
  
 markdown 
-   [README.md]([URL](https://github.com/fastfetch-cli/fastfetch)) 
+   [Project Explanation]((https://github.com/fastfetch-cli/fastfetch) 
