@@ -3,30 +3,40 @@
     "logo": {
        "source": "arch3",
        "color": {
-            "1": "blue",
-            "2": "magenta"
+            "1": "red",
+            "2": "yellow"
             }
     },
     "display": {
-    "separator": "->   ",
+      "color": {
+            "keys": "blue",  // High-contrast for dark theme
+            "title": "cyan",
+            "output": "light_blue"  // Module values
+            },
+    "separator":"➤ ",
         "constants": [
-            "\u001b[40m  "
+            "●  "
         ]
     },
     "modules": [
         {
         "type": "custom",
-            "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
+            "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
             },
             "break",
             {
             "key": "{$1}{icon}  ",
+            "format": "{name} {version} ({arch})",
             "keyColor": "38;5;210",
             "type": "os"
         },
+        {   "type": "host",
+            "key": "{$1}{icon}  ",
+            "keyColor": "38;5;210",
+        },
         {
             "key": "{$1}{icon}  ",
-            "keyColor": "38;5;84",
+            "keyColor": "38;5;210",
             "type": "kernel"
         },
         {
@@ -45,7 +55,7 @@
             "type": "wm"
         },
         {
-            "key": "{$1}{icon}  ",
+            "key":"{$1}{icon}  ",
             "keyColor": "38;5;75",
             "type": "cpu"
         },
@@ -56,18 +66,30 @@
         },
         {
             "key": "{$1}{icon}  ",
-            "keyColor": "38;5;123",
+            "keyColor": "38;5;110",
             "type": "memory"
         },
         {
             "type": "disk",
             "key": "{$1}{icon}  ",
-            "keyColor": "38;5;123"
+            "keyColor": "cyan"
+        },
+        {
+            "type": "command",
+            "key": "{$1}{icon}  ",
+            "keyColor": "blue",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+            "type": "uptime",
+            "key": "{$1}{icon}  ",
+            "keyColor": "light_blue"
         },
         "break",
          {
             "type": "custom",
-            "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
+            "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
         },
     ]
+
 }
