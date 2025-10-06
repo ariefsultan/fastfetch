@@ -6,6 +6,8 @@
 
 <img width="495" height="279" alt="preview2" src="https://github.com/ariefsultan/fastfetch/blob/main/preview/preview2.png" />
 
+<img width="495" height="279" alt="preview3" src="https://github.com/ariefsultan/fastfetch/blob/main/preview/preview3.png" />
+
 before using my config file, make sure you have fastfetch installed on your distros
  [fastfetch page](https://github.com/fastfetch-cli/fastfetch) 
 
